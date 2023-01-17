@@ -1,5 +1,5 @@
 #!/bin/bash
-#
+
 screen_width=$(xdpyinfo | awk '/dimensions:/ { print $2; exit }' | cut -d"x" -f1)
 display_width=$(xdotool getdisplaygeometry | cut -d" " -f1)
 
